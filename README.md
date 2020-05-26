@@ -5,6 +5,7 @@
 
 [快速搞定前端JavaScript面试](https://coding.imooc.com/class/chapter/400.html#Anchor)
 
+by 双越
 
 只看第12章节。
 
@@ -141,6 +142,28 @@
 ### article2
 
 [【No531】千锋web企业面试题精讲教程](https://www.javaxxz.com/thread-383362-1-2.html)  
+
+	─企业面试题精讲①-node.js及项目工程化
+	      第01集node编写代码及实现遍历文件.mp4
+	      第02集为什么学node，node版本升级及NVM.mp4
+	      第03集模块化差异及图片上传服务器的过程.mp4
+	      第04集token及node框架中的MVC.mp4
+	      第05集工程化的按需加载及Git冲突解决.mp4        
+	      第06集设计模式及node中的npm.mp4
+	      第07集Webpack后端黄精的搭建及typescript.mp4
+	     
+	─企业面试题精讲②-reactJS常见问题讲解
+	      第01集 redux中间件原理及componentWillReceiveProps调用时机.mp4
+	      第02集 react虚拟DOM以及性能优化和webpack转化JSX代码.mp4
+	      第03集 setState调用以及遇到的坑和refs作用.mp4
+	      第04集 ref函数、高阶组件、函数组件、hooks.mp4
+	      第05集 生命周期发送ajax、ssr、redux-saga以及react、jQ、vue存在一个项目中.mp4
+	      第06集 组件是什么？避免ajax数据重新获取；react-router原理；reselect是做什么的？.mp4
+	      第07集 什么情况使用异步组件？XSS攻击；immutable.js和redux的最佳实践.mp4%
+
+
+
+
 企业面试题精讲③-Vue.js常见问题讲解
 
 

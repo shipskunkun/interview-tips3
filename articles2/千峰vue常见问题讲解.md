@@ -80,7 +80,7 @@ Q: vuex 的核心
 
 state mutations getters actions modules
 
-getters: 类似于 computed, 
+getters: 类似于 computed, 	
 modules: 拆分仓库，state拆分成几个module
 
 
