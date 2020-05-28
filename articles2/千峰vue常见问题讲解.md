@@ -26,20 +26,43 @@ routes: [{
 
 ## 01  axios
 
+[axios中文文档](http://www.axios-js.com/zh-cn/docs/)
+
+
 axios是什么，怎么使用，实现登陆功能流程？
 
-基于promise用于浏览器和 nodejs 的http客户端  
+Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。	
 主要用于向后台发送请求的，还有就是在请求中做更多的控制  
 
-支持promise  
-提供了并发方法  
-提供拦截器  
-提供CSRF  
+	从浏览器中创建 XMLHttpRequests
+	从 node.js 创建 http 请求
+	支持 Promise API
+	拦截请求和响应
+	转换请求数据和响应数据
+	取消请求
+	自动转换 JSON 数据
+	客户端支持防御 XSRF
 
-axios fetch ajax 区别  
-前两者都是支持promise的语法，后者默认是使用callback   
-fetch本质上脱离的xhr是新的语法，有自己的特性 默认不穿 cookie 不能像 xhr 一样去监听请求的进度  
- 
+
+提供了并发方法
+
+```javascript
+function getUserAccount() {
+  return axios.get('/user/12345');
+}
+
+function getUserPermissions() {
+  return axios.get('/user/12345/permissions');
+}
+
+axios.all([getUserAccount(), getUserPermissions()])
+	.then(axios.spread(function (acct, perms) {
+	// 两个请求现在都执行完成
+}));
+```
+
+拦截请求和响应
+
 ```
 //http request 拦截器
 axios.interceptors.requst.use(function(config) {
@@ -53,6 +76,28 @@ axios.interceptors.requst.use(function(config) {
 axios.interceptors.response.use({
 })
 ```
+
+	
+
+axios fetch ajax 区别  
+前两者都是支持promise的语法，后者默认是使用callback   
+fetch本质上脱离的xhr是新的语法，有自己的特性 默认不穿 cookie 不能像 xhr 一样去监听请求的进度  
+ 
+ [fetch](https://blog.csdn.net/weixin_38858002/java/article/details/81561972)
+
+	fetch是基于promise实现的，也可以结合async/await。
+	fetch请求默认是不带cookie的，需要设置fetch（URL，{credentials:’include’})。
+	Credentials有三种参数：same-origin，include，*
+	服务器返回400 500 状态码时并不会reject，只有网络出错导致请求不能完成时，fetch才会被reject。
+	所有版本的 IE 均不支持原生 Fetch。
+	fetch是widow的一个方法；
+ajax
+
+	是XMLHTTPRequest的一个实例；
+	只有当状态为200或者304时才会请求成功；
+ 
+ 
+ 
 
 
 
